@@ -25,6 +25,7 @@
     "react-helmet": "^5.2.1",
     "react-loading": "^2.0.3",
     "react-loadingg": "^1.7.2",
+    "recharts": "^1.8.5",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
