@@ -2,8 +2,7 @@ import React from 'react';
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
-import { BoxLoading } from 'react-loadingg';
-
+import ReactLoading from 'react-loading';
 
 
 
@@ -130,9 +129,7 @@ class CoronasPage extends React.Component {
     }
 
     return (
-      <div>
-        <BoxLoading />
-      </div>
+          <ReactLoading type={"bars"} color={"#663399"} height={'14%'} width={'14%'}/>
 
     );
   }

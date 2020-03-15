@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Doughnut } from 'react-chartjs-2';
 
 class Chart extends Component{
 
@@ -7,6 +8,7 @@ class Chart extends Component{
     return (
       <div className="chart">
         Mon composant graphique
+        <Doughnut/>
       </div>
     )
   }
