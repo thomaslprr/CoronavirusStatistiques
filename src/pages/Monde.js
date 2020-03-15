@@ -7,15 +7,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Chart from "../components/Chart"
 
 
-const ChinePage = () => (
+const MondePage = () => (
   <Layout>
-    <SEO title="Statistique chine"/>
-    <h1>Retrouvez les statistiques en chine</h1>
+    <SEO title="Statistique monde"/>
+    <h1 className="text-center display-4">MONDE</h1>
 
-    <Chart></Chart>
+
+    <Chart/>
     <Link to="/">Accueil</Link>
   </Layout>
 )
 
-export default ChinePage
+export default MondePage
 
