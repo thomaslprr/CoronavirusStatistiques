@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const IndexPage = () => (
   <Layout>
+
     <CoronasPage></CoronasPage>
   </Layout>
 )

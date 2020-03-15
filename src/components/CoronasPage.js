@@ -2,6 +2,8 @@ import React from 'react';
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
+import { BoxLoading } from 'react-loadingg';
+
 
 
 
@@ -128,14 +130,8 @@ class CoronasPage extends React.Component {
     }
 
     return (
-      <div className="App">
-
-        <div className="text-center h3-responsive m-5">Chargement des données en cours... </div>
-
-
-
-
-
+      <div>
+        <BoxLoading />
       </div>
 
     );
