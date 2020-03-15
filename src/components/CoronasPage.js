@@ -47,7 +47,6 @@ class CoronasPage extends React.Component {
 
     this.setState({resultatgeneraux: data2 , dateMAJ: data.statistic_taken_at,loading: false});
 
-    console.log(this.state.resultatgeneraux);
 
 
 

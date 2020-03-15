@@ -4,7 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Chart from "../components/Chart"
+import Chart from "../components/Chart";
+import Camembert from "../components/Camembert"
 
 
 const MondePage = () => (
@@ -14,6 +15,7 @@ const MondePage = () => (
 
 
     <Chart/>
+    <Camembert/>
     <Link to="/">Accueil</Link>
   </Layout>
 )
