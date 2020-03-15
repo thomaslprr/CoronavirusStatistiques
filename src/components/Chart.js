@@ -32,7 +32,7 @@ class Chart extends Component{
   render(){
    if(!this.state.loading){
      return (
-       <AreaChart width={600} height={400} data={this.state.resultat} margin={{top:10, right:30, left:0, bottom:0}} >
+       <AreaChart width={1200} height={400} data={this.state.resultat} margin={{top:10, right:30, left:0, bottom:0}} >
          <XAxis dataKey="name"/>
          <YAxis/>
          <Tooltip/>

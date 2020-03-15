@@ -3,6 +3,7 @@ import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import ReactLoading from 'react-loading';
+import Chart from "./Chart"
 
 
 
@@ -64,23 +65,29 @@ class CoronasPage extends React.Component {
     if(!this.state.loading){
 
       return (
+
         <div>
-          <div className="text-center">
-            <Button className="m-5 btn-lg" variant="warning ">
-              Cas total <Badge pill variant="big">{this.state.resultatgeneraux['total_cases']}</Badge>
-            </Button>
+          <div className="">
+            <div className="text-center ">
+              <Button className="m-2 btn-lg" variant="warning ">
+                Cas total <Badge pill variant="big">{this.state.resultatgeneraux['total_cases']}</Badge>
+              </Button>
 
-            <Button className="m-5 btn-lg" variant="danger">
-              Mort total <Badge pill variant="big">{this.state.resultatgeneraux['total_deaths']}</Badge>
-            </Button>
+              <Button className="m-2 btn-lg" variant="danger">
+                Mort total <Badge pill variant="big">{this.state.resultatgeneraux['total_deaths']}</Badge>
+              </Button>
 
-            <Button className="m-5 btn-lg" variant="info">
-              Nouveau cas <Badge pill variant="big">{this.state.resultatgeneraux['new_cases']}</Badge>
-            </Button>
+              <Button className="m-2 btn-lg" variant="info">
+                Nouveau cas <Badge pill variant="big">{this.state.resultatgeneraux['new_cases']}</Badge>
+              </Button>
 
-            <Button className="m-5 btn-lg" variant="dark">
-              Nouveau mort <Badge pill variant="big">{this.state.resultatgeneraux['new_deaths']}</Badge>
-            </Button>
+              <Button className="m-2 btn-lg" variant="dark">
+                Nouveau mort <Badge pill variant="big">{this.state.resultatgeneraux['new_deaths']}</Badge>
+              </Button>
+            </div>
+            <div className="m-5">
+              <Chart/>
+            </div>
           </div>
 
 
@@ -98,7 +105,7 @@ class CoronasPage extends React.Component {
               <th>Mort</th>
               <th>Nouveau cas</th>
               <th>Nouveau décès</th>
-              <th>Proportion dans le monde</th>
+              <th>Rétablie</th>
 
             </tr>
             </thead>
