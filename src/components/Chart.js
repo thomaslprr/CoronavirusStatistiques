@@ -31,7 +31,7 @@ class Chart extends Component{
       return (
 
           <div className="justify-content-center align-content-center cent">
-            <AreaChart width={window.innerWidth-200} height={400} data={this.state.resultat} margin={{ top: 10, right: 30, left: 0, bottom: 0 }} style={{margin : "auto", align: "center"}}>
+            <AreaChart width={window.innerWidth-100} height={400} data={this.state.resultat} margin={{ left: 30, bottom: 0 }} style={{align: "center"}}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="reportDateString" />
               <YAxis />
