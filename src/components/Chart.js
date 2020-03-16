@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts'
 import ReactLoading from 'react-loading';
+import { ResponsiveContainer } from "react-responsive-widget"
 
 
 
@@ -28,14 +29,20 @@ class Chart extends Component{
   render(){
     if(!this.state.loading){
       return (
-        <AreaChart width={1200} height={400} data={this.state.resultat} margin={{ top: 10, right: 30, left: 0, bottom: 0 }} style={{margin : "auto"}}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="reportDateString" />
-          <YAxis />
-          <Tooltip />
-          <Area type='monotone' dataKey='totalConfirmed' stroke='#ffc107' fill='#ffc107' />
-          <Area type='monotone' dataKey='totalRecovered' stroke='#285d3a' fill='#48c774' />
-        </AreaChart>
+
+
+            <AreaChart width={window.innerWidth-200} height={400} data={this.state.resultat} margin={{ top: 10, right: 30, left: 0, bottom: 0 }} style={{margin : "auto"}}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="reportDateString" />
+              <YAxis />
+              <Tooltip />
+              <Area type='monotone' dataKey='totalConfirmed' stroke='#ffc107' fill='#ffc107' />
+              <Area type='monotone' dataKey='totalRecovered' stroke='#285d3a' fill='#48c774' />
+            </AreaChart>
+
+
+
+
 
       );
     }
