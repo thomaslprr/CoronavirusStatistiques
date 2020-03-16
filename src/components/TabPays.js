@@ -31,11 +31,19 @@ class TabPays extends React.Component {
     const data = await response.json();
 
 
+    const response2 = await fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
+      "method": "GET",
+      "headers": {
+        "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
+        "x-rapidapi-key": "85de271099msh83528430f51fd19p152b6bjsn217e4a52701f"
+      }
+    });
+    const data2 = await response2.json();
+
     this.setState({resultat: data.countries_stat});
 
 
-    this.setState({ dateMAJ: data.statistic_taken_at,loading: false});
-
+    this.setState({resultatgeneraux: data2 , dateMAJ: data.statistic_taken_at,loading: false});
 
 
 
@@ -55,7 +63,6 @@ class TabPays extends React.Component {
       return (
 
         <div>
-          export default CoronasPage;
           <p className="text-center font-italic">Dernière mise à jour des données : {this.state.resultatgeneraux['statistic_taken_at']}</p>
 
 

@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StatsGeneraux from "../components/StatsGeneraux"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TabPays from "../components/TabPays"
 
 
 
@@ -15,6 +16,12 @@ class index extends React.Component {
 
   ActionMonde() {
     if(!this.state.monde){
+      this.setState({monde: true});
+    }
+  }
+
+  ActionPays(){
+    if(this.state.monde){
       this.setState({monde: false});
     }
   }
@@ -28,8 +35,8 @@ class index extends React.Component {
           <SEO title="Coronavirus Stats"></SEO>
 
           <div className="text-center">
-            <button className="m-2 btn-sm" onClick={() => this.ActionMonde()}>Monde</button>
-            <button className="m-2 btn-sm" onClick={() => this.ActionPays()}>Par pays</button>
+            <button className="m-2 btn-sm btn-dark" onClick={() => this.ActionMonde()}>Monde</button>
+            <button className="m-2 btn-sm btn-outline-dark" onClick={() => this.ActionPays()}>Par pays</button>
           </div>
 
 
@@ -43,12 +50,12 @@ class index extends React.Component {
           <SEO title="Coronavirus Stats"></SEO>
 
           <div className="text-center">
-            <button className="m-2 btn-sm" onClick={() => this.ActionMonde()}>Monde</button>
-            <button className="m-2 btn-sm" onClick={() => this.ActionPays()}>Par pays</button>
+            <button className="m-2 btn-sm btn-outline-dark" onClick={() => this.ActionMonde()}>Monde</button>
+            <button className="m-2 btn-sm btn-dark" onClick={() => this.ActionPays()}>Par pays</button>
           </div>
 
+          <TabPays/>
 
-          <StatsGeneraux></StatsGeneraux>
         </Layout>
 
       );
