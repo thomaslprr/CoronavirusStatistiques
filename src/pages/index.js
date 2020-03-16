@@ -4,11 +4,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StatsGeneraux from "../components/StatsGeneraux"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TabPays from "../components/TabPays"
+import TabPays from "../components/TabPays";
+import Darkmode from 'darkmode-js';
+
 
 
 
 class index extends React.Component {
+
 
   state= {
     monde:true,
@@ -31,10 +34,11 @@ class index extends React.Component {
 
     if(this.state.monde){
       return (
+
         <Layout>
           <SEO title="Coronavirus Stats"></SEO>
 
-          <div className="text-center">
+          <div className="text-center mb-3">
             <button className="m-2 btn-sm btn-dark" onClick={() => this.ActionMonde()}>Monde</button>
             <button className="m-2 btn-sm btn-outline-dark" onClick={() => this.ActionPays()}>Par pays</button>
           </div>
@@ -49,7 +53,7 @@ class index extends React.Component {
         <Layout>
           <SEO title="Coronavirus Stats"></SEO>
 
-          <div className="text-center">
+          <div className="text-center mb-3">
             <button className="m-2 btn-sm btn-outline-dark" onClick={() => this.ActionMonde()}>Monde</button>
             <button className="m-2 btn-sm btn-dark" onClick={() => this.ActionPays()}>Par pays</button>
           </div>
