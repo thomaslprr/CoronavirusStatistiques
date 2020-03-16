@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
-import { AreaChart, CartesianGrid } from "recharts"
-import Tooltip from "react-bootstrap/Tooltip"
-import Area from "recharts/lib/cartesian/Area"
-import XAxis from "recharts/lib/cartesian/XAxis"
-import YAxis from "recharts/lib/cartesian/YAxis"
+import {AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts'
 import ReactLoading from 'react-loading';
 
 
@@ -37,7 +33,7 @@ class Chart extends Component{
          <XAxis dataKey="reportDateString" />
          <YAxis />
          <Tooltip />
-         <Area type='monotone' dataKey='totalConfirmed' stroke='#6f6024' fill='#ffdd57' />
+         <Area type='monotone' dataKey='totalConfirmed' stroke='#ffc107' fill='#ffc107' />
          <Area type='monotone' dataKey='totalRecovered' stroke='#285d3a' fill='#48c774' />
 
        </AreaChart>

@@ -77,6 +77,10 @@ class CoronasPage extends React.Component {
                 Mort total <Badge pill variant="big">{this.state.resultatgeneraux['total_deaths']}</Badge>
               </Button>
 
+              <Button className="m-2 btn-lg" variant="sucess">
+                Rétablie <Badge pill variant="big">{this.state.resultatgeneraux['total_recovered']}</Badge>
+              </Button>
+
               <Button className="m-2 btn-lg" variant="info">
                 Nouveau cas <Badge pill variant="big">{this.state.resultatgeneraux['new_cases']}</Badge>
               </Button>
