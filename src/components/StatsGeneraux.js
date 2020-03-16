@@ -8,7 +8,7 @@ import Chart from "./Chart"
 
 
 
-class CoronasPage extends React.Component {
+class StatsGeneraux extends React.Component {
 
 
   state = {
@@ -17,10 +17,6 @@ class CoronasPage extends React.Component {
     dateMAJ : null,
     resultatgeneraux : null
   };
-
-
-
-
 
 
   async componentDidMount() {
@@ -73,12 +69,12 @@ class CoronasPage extends React.Component {
                 Cas total <Badge pill variant="big">{this.state.resultatgeneraux['total_cases']}</Badge>
               </Button>
 
-              <Button className="m-2 btn-lg" variant="danger">
-                Mort total <Badge pill variant="big">{this.state.resultatgeneraux['total_deaths']}</Badge>
+              <Button className="m-2 btn-lg" variant="success">
+                Rétabli <Badge pill variant="big">{this.state.resultatgeneraux['total_recovered']}</Badge>
               </Button>
 
-              <Button className="m-2 btn-lg" variant="sucess">
-                Rétablie <Badge pill variant="big">{this.state.resultatgeneraux['total_recovered']}</Badge>
+              <Button className="m-2 btn-lg" variant="danger">
+                Mort total <Badge pill variant="big">{this.state.resultatgeneraux['total_deaths']}</Badge>
               </Button>
 
               <Button className="m-2 btn-lg" variant="info">
@@ -93,53 +89,13 @@ class CoronasPage extends React.Component {
               <Chart/>
             </div>
           </div>
-
-
-          <p className="text-center font-italic">Dernière mise à jour des données : {this.state.resultatgeneraux['statistic_taken_at']}</p>
-
-
-
-
-          <Table striped bordered hover responsive variant="dark">
-            <thead>
-            <tr>
-              <th>Pays</th>
-              <th>Cas</th>
-              <th>Cas critique</th>
-              <th>Mort</th>
-              <th>Nouveau cas</th>
-              <th>Nouveau décès</th>
-              <th>Rétablie</th>
-
-            </tr>
-            </thead>
-            <tbody>
-
-            {this.state.resultat.map(pays =>(
-              <tr>
-                <td>{pays.country_name}</td>
-                <td>{pays.cases}</td>
-                <td>{pays.serious_critical}</td>
-                <td>{pays.deaths}</td>
-                <td>{pays.new_cases}</td>
-                <td>{pays.new_deaths}</td>
-                <td>{pays.total_recovered}</td>
-
-
-              </tr>
-
-            ))}
-
-
-            </tbody>
-          </Table>
         </div>
       )
 
     }
 
     return (
-          <ReactLoading type={"bars"} color={"#663399"} height={'14%'} width={'14%'}/>
+          <ReactLoading type={"bars"} color={"#000000"} height={'14%'} width={'14%'}/>
 
     );
   }
@@ -151,4 +107,4 @@ class CoronasPage extends React.Component {
 
 }
 
-export default CoronasPage;
+export default StatsGeneraux;

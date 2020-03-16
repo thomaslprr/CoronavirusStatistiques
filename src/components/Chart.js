@@ -7,10 +7,10 @@ import ReactLoading from 'react-loading';
 
 class Chart extends Component{
 
- state={
-     loading: true,
-     resultat: null
- }
+  state={
+    loading: true,
+    resultat: null
+  }
 
 
 
@@ -26,24 +26,23 @@ class Chart extends Component{
 
 
   render(){
-   if(!this.state.loading){
-     return (
-       <AreaChart width={800} height={400} data={this.state.resultat} margin={{ top: 10, right: 30, left: 0, bottom: 0 }} style={{margin : "auto"}}>
-         <CartesianGrid strokeDasharray="3 3" />
-         <XAxis dataKey="reportDateString" />
-         <YAxis />
-         <Tooltip />
-         <Area type='monotone' dataKey='totalConfirmed' stroke='#ffc107' fill='#ffc107' />
-         <Area type='monotone' dataKey='totalRecovered' stroke='#285d3a' fill='#48c774' />
+    if(!this.state.loading){
+      return (
+        <AreaChart width={1200} height={400} data={this.state.resultat} margin={{ top: 10, right: 30, left: 0, bottom: 0 }} style={{margin : "auto"}}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="reportDateString" />
+          <YAxis />
+          <Tooltip />
+          <Area type='monotone' dataKey='totalConfirmed' stroke='#ffc107' fill='#ffc107' />
+          <Area type='monotone' dataKey='totalRecovered' stroke='#285d3a' fill='#48c774' />
+        </AreaChart>
 
-       </AreaChart>
+      );
+    }
 
-     );
-   }
-
-   return(
-     <ReactLoading type={"spinningBubbles"} color={"#663399"} height={'14%'} width={'14%'}/>
-   )
+    return(
+      <ReactLoading type={"bars"} color={"#000000"} height={'14%'} width={'14%'}/>
+    )
 
   }
 }

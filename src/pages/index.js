@@ -1,18 +1,65 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import CoronasPage from "../components/CoronasPage"
+import StatsGeneraux from "../components/StatsGeneraux"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const IndexPage = () => (
-  <Layout>
 
-    <CoronasPage></CoronasPage>
-  </Layout>
-)
+class index extends React.Component {
 
-export default IndexPage
+  state= {
+    monde:true,
+  };
+
+  ActionMonde() {
+    if(!this.state.monde){
+      this.setState({monde: false});
+    }
+  }
+
+
+  render() {
+
+    if(this.state.monde){
+      return (
+        <Layout>
+          <SEO title="Coronavirus Stats"></SEO>
+
+          <div className="text-center">
+            <button className="m-2 btn-sm" onClick={() => this.ActionMonde()}>Monde</button>
+            <button className="m-2 btn-sm" onClick={() => this.ActionPays()}>Par pays</button>
+          </div>
+
+
+          <StatsGeneraux></StatsGeneraux>
+        </Layout>
+
+      );
+    }else{
+      return (
+        <Layout>
+          <SEO title="Coronavirus Stats"></SEO>
+
+          <div className="text-center">
+            <button className="m-2 btn-sm" onClick={() => this.ActionMonde()}>Monde</button>
+            <button className="m-2 btn-sm" onClick={() => this.ActionPays()}>Par pays</button>
+          </div>
+
+
+          <StatsGeneraux></StatsGeneraux>
+        </Layout>
+
+      );
+    }
+
+
+
+}
+
+
+}
+export default index;
+
+
