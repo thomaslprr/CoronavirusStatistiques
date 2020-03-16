@@ -5,17 +5,21 @@ import SEO from "../components/seo"
 import StatsGeneraux from "../components/StatsGeneraux"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TabPays from "../components/TabPays";
-import Darkmode from 'darkmode-js';
+
+
 
 
 
 
 class index extends React.Component {
-
+  
 
   state= {
     monde:true,
   };
+
+
+
 
   ActionMonde() {
     if(!this.state.monde){
@@ -34,7 +38,6 @@ class index extends React.Component {
 
     if(this.state.monde){
       return (
-
         <Layout>
           <SEO title="Coronavirus Stats"></SEO>
 
@@ -47,9 +50,11 @@ class index extends React.Component {
           <StatsGeneraux></StatsGeneraux>
         </Layout>
 
-      );
+
+    );
     }else{
       return (
+
         <Layout>
           <SEO title="Coronavirus Stats"></SEO>
 
