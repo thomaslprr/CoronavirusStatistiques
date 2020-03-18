@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Coronavirus statistiques`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Retrouvez les statistiques du coronavirus (covid-19) dans le monde et par pays en temps réel.`,
+    author: `Thomas Lapierre`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
