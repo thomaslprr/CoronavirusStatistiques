@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts'
 import ReactLoading from 'react-loading';
-import { ResponsiveContainer } from "react-responsive-widget"
 
 
 
