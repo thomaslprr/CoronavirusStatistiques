@@ -9,7 +9,7 @@
 ## 🚀 Description
 
 
-	Ce projet a pour but d'afficher en temps réel les statistiques du covid-19 dans le monde, mais également pour chaque pays touché.  
+1.	Ce projet a pour but d'afficher en temps réel les statistiques du covid-19 dans le monde, mais également pour chaque pays touché.  
 	
     Il s'agit de mon premier site en React. Ce site utilise également Gatsby.
 	
