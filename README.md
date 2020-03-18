@@ -1,28 +1,23 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
+
 <h1 align="center">
-  Gatsby's default starter
+	Covid-19 Projet
 </h1>
 
 
 
-## 🚀 COVID-19 Projet
+## 🚀 Description
 
-1.  **Description**
 
 	Ce projet a pour but d'afficher en temps réel les statistiques du covid-19 dans le monde, mais également pour chaque pays touché.  
 	
-    Il s'agit mon premier site en React. Ce site utilise également Gatsby.
+    Il s'agit de mon premier site en React. Ce site utilise également Gatsby.
 	
 	Pour réaliser ce projet j'ai du utiliser 2 API : 
 	
-	- 
+	- https://rapidapi.com/astsiatsko/api/coronavirus-monitor
 	
-	-
+	- https://covid19.mathdro.id/api
 	
 	
 
