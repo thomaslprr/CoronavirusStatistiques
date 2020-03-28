@@ -91,7 +91,7 @@ class StatsGeneraux extends React.Component {
               </div>
 
 
-              <div className="card-group mb-5 ">
+              <div className="card-group m-5 ">
 
               <div className="card text-white bg-info card" >
                 <div className="card-body">
