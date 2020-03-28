@@ -70,21 +70,21 @@ class StatsGeneraux extends React.Component {
 
               <div className="card text-black bg-warning m-3 card">
                 <div className="card-body">
-                  <h5 className="card-title">Cas Total</h5>
+                  <h5 className="card-title">Cas totals</h5>
                   <p className="card-text">{this.state.resultatgeneraux['total_cases']}</p>
                 </div>
               </div>
 
               <div className="card text-white bg-success m-3 card ">
                 <div className="card-body">
-                  <h5 className="card-title">Rétabli</h5>
+                  <h5 className="card-title">Cas rétablis</h5>
                   <p className="card-text">{this.state.resultatgeneraux['total_recovered']}</p>
                 </div>
               </div>
 
               <div className="card text-white bg-danger m-3 card">
                 <div className="card-body">
-                  <h5 className="card-title">Mort total</h5>
+                  <h5 className="card-title">Morts totals</h5>
                   <p className="card-text">{this.state.resultatgeneraux['total_deaths']}</p>
                 </div>
               </div>
@@ -95,13 +95,13 @@ class StatsGeneraux extends React.Component {
 
               <div className="card text-white bg-info card" >
                 <div className="card-body">
-                  <h5 className="card-title">Nouveau cas </h5>
+                  <h5 className="card-title">Nouveaux cas </h5>
                   <p className="card-text">{this.state.resultatgeneraux['new_cases']}</p>
                 </div>
               </div>
               <div className="card text-white bg-dark  card" >
                 <div className="card-body">
-                  <h5 className="card-title">Nouveau mort</h5>
+                  <h5 className="card-title">Nouveaux morts</h5>
                   <p className="card-text">{this.state.resultatgeneraux['new_deaths']}</p>
                 </div>
               </div>

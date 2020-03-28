@@ -73,11 +73,11 @@ class TabPays extends React.Component {
             <tr>
               <th>Pays</th>
               <th>Cas</th>
-              <th>Cas critique</th>
-              <th>Mort</th>
-              <th>Nouveau cas</th>
-              <th>Nouveau décès</th>
-              <th>Rétabli</th>
+              <th>Cas critiques</th>
+              <th>Morts</th>
+              <th>Nouveaux cas</th>
+              <th>Nouveaux décès</th>
+              <th>Rétablis</th>
 
             </tr>
             </thead>
