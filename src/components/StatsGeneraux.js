@@ -63,32 +63,56 @@ class StatsGeneraux extends React.Component {
       return (
 
         <div>
-          <div className="">
+
             <div className="text-center ">
-              <Button className="m-2 btn-lg" variant="warning ">
-                Cas total <Badge pill variant="big">{this.state.resultatgeneraux['total_cases']}</Badge>
-              </Button>
 
-              <Button className="m-2 btn-lg" variant="success">
-                Rétabli <Badge pill variant="big">{this.state.resultatgeneraux['total_recovered']}</Badge>
-              </Button>
+              <div className="card-group">
 
-              <Button className="m-2 btn-lg" variant="danger">
-                Mort total <Badge pill variant="big">{this.state.resultatgeneraux['total_deaths']}</Badge>
-              </Button>
+              <div className="card text-black bg-warning m-3 card">
+                <div className="card-body">
+                  <h5 className="card-title">Cas Total</h5>
+                  <p className="card-text">{this.state.resultatgeneraux['total_cases']}</p>
+                </div>
+              </div>
 
-              <Button className="m-2 btn-lg" variant="info">
-                Nouveau cas <Badge pill variant="big">{this.state.resultatgeneraux['new_cases']}</Badge>
-              </Button>
+              <div className="card text-white bg-success m-3 card ">
+                <div className="card-body">
+                  <h5 className="card-title">Rétabli</h5>
+                  <p className="card-text">{this.state.resultatgeneraux['total_recovered']}</p>
+                </div>
+              </div>
 
-              <Button className="m-2 btn-lg" variant="dark">
-                Nouveau mort <Badge pill variant="big">{this.state.resultatgeneraux['new_deaths']}</Badge>
-              </Button>
+              <div className="card text-white bg-danger m-3 card">
+                <div className="card-body">
+                  <h5 className="card-title">Mort total</h5>
+                  <p className="card-text">{this.state.resultatgeneraux['total_deaths']}</p>
+                </div>
+              </div>
+              </div>
+
+
+              <div className="card-group mb-5 ml-5 mr-5">
+
+              <div className="card text-white bg-info card ml-5 " >
+                <div className="card-body">
+                  <h5 className="card-title">Nouveau cas </h5>
+                  <p className="card-text">{this.state.resultatgeneraux['new_cases']}</p>
+                </div>
+              </div>
+              <div className="card text-white bg-dark  card mr-5" >
+                <div className="card-body">
+                  <h5 className="card-title">Nouveau mort</h5>
+                  <p className="card-text">{this.state.resultatgeneraux['new_deaths']}</p>
+                </div>
+              </div>
+              </div>
+
             </div>
-            <div className="m-5">
+
+
+            <div className="">
               <Chart/>
             </div>
-          </div>
         </div>
       )
 
