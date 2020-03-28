@@ -70,28 +70,28 @@ class StatsGeneraux extends React.Component {
 
               <div className="card text-black bg-warning m-3 card">
                 <div className="card-body">
-                  <h5 className="card-title">Cas totals</h5>
+                  <h5 className="card-title">Cas</h5>
                   <p className="card-text">{this.state.resultatgeneraux['total_cases']}</p>
                 </div>
               </div>
 
               <div className="card text-white bg-success m-3 card ">
                 <div className="card-body">
-                  <h5 className="card-title">Cas rétablis</h5>
+                  <h5 className="card-title">Rétablis</h5>
                   <p className="card-text">{this.state.resultatgeneraux['total_recovered']}</p>
                 </div>
               </div>
 
               <div className="card text-white bg-danger m-3 card">
                 <div className="card-body">
-                  <h5 className="card-title">Morts totals</h5>
+                  <h5 className="card-title">Morts</h5>
                   <p className="card-text">{this.state.resultatgeneraux['total_deaths']}</p>
                 </div>
               </div>
               </div>
 
 
-              <div className="card-group m-5 ">
+              <div className="card-group mb-5 ml-5 mr-5 ">
 
               <div className="card text-white bg-info card" >
                 <div className="card-body">
