@@ -91,15 +91,15 @@ class StatsGeneraux extends React.Component {
               </div>
 
 
-              <div className="card-group mb-5 ml-5 mr-5">
+              <div className="card-group mb-5 ">
 
-              <div className="card text-white bg-info card ml-5 " >
+              <div className="card text-white bg-info card" >
                 <div className="card-body">
                   <h5 className="card-title">Nouveau cas </h5>
                   <p className="card-text">{this.state.resultatgeneraux['new_cases']}</p>
                 </div>
               </div>
-              <div className="card text-white bg-dark  card mr-5" >
+              <div className="card text-white bg-dark  card" >
                 <div className="card-body">
                   <h5 className="card-title">Nouveau mort</h5>
                   <p className="card-text">{this.state.resultatgeneraux['new_deaths']}</p>
